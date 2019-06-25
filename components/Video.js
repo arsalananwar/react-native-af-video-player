@@ -357,8 +357,8 @@ class Video extends Component {
     } = this.props
 
     const inline = {
-      height: inlineHeight,
-      alignSelf: 'stretch'
+        width:'100%',
+        height:'100%'
     }
 
     const setTheme = {
@@ -421,7 +421,7 @@ class Video extends Component {
           more={!!onMorePress}
           onMorePress={() => onMorePress()}
           theme={setTheme}
-          inlineOnly={inlineOnly}
+          inlineOnly={true}
           controlDuration={controlDuration}
         />
       </Animated.View>
