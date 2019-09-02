@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
     height: 35,
     alignSelf: 'stretch',
     justifyContent: 'flex-end',
-    marginBottom:70
+    marginBottom:25,
+    zIndex:100001
   }
 })
 
