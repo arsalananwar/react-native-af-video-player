@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Platform} from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 import { ToggleIcon, Time, Scrubber } from './'
 
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     height: 35,
     alignSelf: 'stretch',
     justifyContent: 'flex-end',
-    marginBottom:25,
+    marginBottom:Platform.OS === 'ios' ? 0 : 25,
     zIndex:100001
   }
 })
